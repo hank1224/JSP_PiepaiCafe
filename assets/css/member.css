@@ -16,7 +16,7 @@
     height: 700px;
     border-radius: 20px;
     font-size: 20px;
-    margin-left: 130px;
+    margin-left: 170px;
 }
 /* 頁籤ul */
 
@@ -28,7 +28,6 @@
     float: left;
     padding: 20px;
     margin-top: 30px;
-    margin-bottom: 20px;;
     margin-left: 70px;
 
     width: 150px;    
@@ -59,7 +58,7 @@ span ~ #tab > ul li:first-child a,
 #tab-3:target ~ #tab > ul li a[href$="#tab-3"],
 #tab-4:target ~ #tab > ul li a[href$="#tab-4"] {
     background: white;
-    border-radius: 50px;    
+    border-radius: 5px 5px 0 0;    
 }
 
 span ~ #tab > ul li:first-child a::before,
@@ -90,8 +89,8 @@ span ~ #tab > div:first-of-type,
 }
 .m-s2-f-form{
     display: flex;
-    margin-top: 100px;
-    /*margin-left: 140px;*/
+    margin-top: 50px;
+    margin-left: 140px;
 }
 .m-s2-f-f-person{
     width: 300px;

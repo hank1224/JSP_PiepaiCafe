@@ -1,15 +1,13 @@
 
 footer{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    /*position: relative;*/
+    display: block;
+    position: relative;
     z-index: 1;
     background-color: white;
-    border-top: 1px solid rgb(218, 218, 218);
+    border-top: 2px solid rgb(218, 218, 218);
     height: 110px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .f-down{
     text-align: center;

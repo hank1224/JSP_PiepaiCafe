@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳確認</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/checkout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/login.css"> 
+    <script src="../assets/js/checkout.js"></script>
+</head>
+<body>
+    <!--導覽列-->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar-option"><a href="../pages/brandconcept.html">品牌理念</a></li>
+                <li class="navbar-option">
+                    <span><a href="./allproduct.html">全部商品</a></span>
+                    <ul>
+                        <li><a href="./birth.html">生日蛋糕</a></li>
+                        <li><a href="./pie.html">派塔系列</a></li>
+                        <li><a href="./other.html">伴手禮禮盒</a></li>
+                    </ul>
+                </li>
+                <!--logo-->
+                <li class="protrait"></li>
+                <li class="navbar-option"><a href="./auoutus.html" class="aboutus">關於我們</a></li>
+                <li class="navbar-option">
+                    <span><a href="./member.html">會員資訊</a></span>
+                    <ul>
+                        <li><button class="btn01" onclick="document.getElementById('id01').style.display='block'" style="width:120px; background-color: white; color: black; height:60px; margin-left: 0px;font-size:15px;">登入</button></li>
+                        <li><button class="btn01" onclick="document.getElementById('id02').style.display='block'" style="width:120px; background-color: white; color: black; height:60px; margin-left: 0px;font-size:15px;">註冊</button></li>
+                    </ul>
+                </li>
+               <!--搜尋-->
+                <div class="right-navbar-option">
+                    <form action="">
+                        <span class="input-container"><input type="text" placeholder="searching..."></span>
+                        <span><img src="../assets/img/icon/search.png"></span>  
+                    </form>    
+                </div>
+                <div class="right-navbar-option"><a href="../pages/index.html"><img src="../assets/img/icon/home2.png" alt=""></a></div>
+                <div class="right-navbar-option"><a href="../pages/checkout.html"><img src="../assets/img/icon/shoppingcart.png"></a></div>
+                <div class="right-navbar-option"><a href="mailto:tartine@gmail.com" ><button>Contact</button></a></div> 
+            </ul>
+        </nav>
+        <div class="title">
+            <div class="logins" >
+    
+              <div id="id01" class="modal">
+                
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+              
+                  <div class="container"><br>
+                    <h1 style="text-align: center;color: black;">登入</h1><br>
+                    <label for="uname" style="color: black;size: 10px;"><b><br>使用者名稱</b></label>
+                    <input type="text" placeholder="請輸入名稱" name="uname" required style="border-radius: 10px;">
+                    <br>
+                    <label for="psw" style="color: black;size: 10px;"><b><br>密碼</b></label>
+                    <input type="password" placeholder="請輸入密碼" name="psw" required style="border-radius: 10px;"><br><br>
+                      
+                    <button class="btn01" type="submit" style="align-items: center;">登入</button><br>
+                    
+                  </div>
+    
+                </form>
+              </div>
+            </div>
+            <div class="register">
+              <button class="btn01" onclick="document.getElementById('id02').style.display='block'" style="width:80px;margin-left:500px;margin-top: 30px;position: absolute;">註冊</button>
+            
+              <div id="id02" class="modal">
+                
+                <form class="modal-content1 animate" action="/action_page.php" method="post" >
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+              
+                  <div class="container"><br>
+                    <h1 style="text-align: center;color: black;">註冊</h1><br>
+                    <label for="uname" style="color: black;size: 10px;"><b><br>使用者名稱</b></label>
+                    <input type="text" placeholder="Tina12345" name="uname" required style="border-radius: 10px;">
+                    <br>
+                    <label for="psw" style="color: black;size: 10px;"><b><br>密碼</b></label>
+                    <input type="password" placeholder="password" name="psw" required style="border-radius: 10px;">
+                    <br>
+                    <label for="psw" style="color: black;size: 10px;"><b><br>E-mail</b></label>
+                    <input type="password" placeholder="Tina12345@gmail.com" name="psw" required style="border-radius: 10px;">
+                    <br>
+                    <label for="psw" style="color: black;size: 10px;"><b><br>電話</b></label>
+                    <input type="password" placeholder="0912345678" name="psw" required style="border-radius: 10px;">                  
+                    <br><br>  
+                    <button class="btn01" type="submit" style="align-items: center;">註冊</button><br>
+                  </div>
+    
+                </form>
+              </div>
+            </div>
+    
+          </div>
+    </header>
+
+    <main>
+        <section class="section1">
+            <div class="order">
+                <div class="check-order">
+                    <img src="../assets/img/icon/check.png" alt="">
+                    <h1>購物車</h1>
+                </div>
+                <table>
+                    <tbody>
+                        <tr class="or-title">
+                            <th colspan="2">商品</th>
+                            <th>單價</th>
+                            <th>數量</th>
+                            <th>小計</th>
+                        </tr>
+                        <tr>
+                            <td class="or-img">
+                                <img src="../assets/img/top/top1.png">
+                            </td>
+                            <td class="or-txt">超級芝麻</td> 
+                            <td>NT$1,000</td>   
+                            <td class="cp2-container">
+                                <div class="cp2">
+                                    <button onclick="Less()" class="but1">-</button>
+                                    <span class="itemcount" id="itemcount">1</span>
+                                    <button onclick="Add()" class="but1">+</button>
+                                </div>
+                            </td>
+                            <td>NT$1,000</td>
+                            <td class="cp4"><button >X</button></td>
+                        </tr>
+                        <tr>
+                            <td class="or-img">
+                                <img src="../assets/img/top/top2.jpeg">
+                            </td>
+                            <td class="or-txt">伯爵火山+果乾</td> 
+                            <td>NT$1,200</td>   
+                            <td class="cp2-container">
+                                <div class="cp2">
+                                    <button onclick="Less1()" class="but1">-</button>
+                                    <span class="itemcount" id="itemcount1">1</span>
+                                    <button onclick="Add1()" class="but1">+</button>
+                                </div>
+                            </td>
+                            <td> NT$1,200</td>
+                            <td class="cp4"><button >X</button></td>
+                        </tr>
+                        <tr class="or-end">
+                            <td class="or-img">
+                                
+                                <img src="../assets/img/top/top3.png">
+                            </td>
+                            <td class="or-txt">伯爵夫人與雙莓公主</td> 
+                            <td>NT$800</td>   
+                            <td class="cp2-container">
+                                <div class="cp2">
+                                    <button onclick="Less2()" class="but1">-</button>
+                                    <span class="itemcount" id="itemcount2">1</span>
+                                    <button onclick="Add2()" class="but1">+</button>
+                                </div>
+                            </td>
+                            <td>NT$800</td>
+                            <td class="cp4"><button >X</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot >
+                        <tr>
+                            <td colspan="3"></td>
+                            <td >
+                                
+                                    <div class="check-txt-top">Subtotal:</div>
+                                    <div class="check-txt">運費:</div>
+                                    <div class="check-txt">Total:</div>
+                                                             
+                            </td>
+                            <td>
+                                <div class="check-txt-top">NT$3,000</div>
+                                <div class="check-txt">NT$120</div>
+                                <div class="check-txt">NT$3,120</div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div> 
+        </section>
+
+        <section class="section2">
+            <div class="write-data">
+                <img src="../assets/img/icon/signature.png" alt="">
+                <h1>填寫資料</h1>
+            </div>
+            <div class="data">
+                <!--左邊資料欄位-->
+                <div class="group-left">
+                    
+                        <div class="form-header-top">訂購人資料</div>
+                        <div class="form-body">
+                            <form action="" class="customer-information">
+                                <span>訂購人：</span>
+                                <span>蔡怡珊</span><br>
+                                <span>電話號碼：</span>
+                                <span>0908406807</span><br>
+                                <span>電子郵件：</span>
+                                <span>koyiiimty0712@gmail.com</span><br>
+                            </form>
+                        </div>    
+                        <div class="form-header">付款資料</div>
+                        <div class="form-body">
+                            <form action="">
+                                <select name="" id="" class="answer">
+                                    <option>貨到付款</option>
+                                    <option>信用卡</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="form-header">其他</div>
+                        <div class="form-body">
+                            <form action="">
+                                <label>是否需要蠟燭？</label><br>
+                                <input type="text" class="answer"><br>
+                            </form>
+                                
+                        </div>
+                        <div class="form-header">訂單備註</div>
+                        <div class="form-body">
+                            <form action="">
+                                <textarea class="memo" cols="20" rows="3" wrap="hard" placeholder="有什麼想要告訴賣家的嗎？"></textarea>
+                            </form> 
+                        </div>
+                    
+                </div>
+                <!--右邊資料欄-->
+                <div class="group-right"> 
+                        <div class="form-header-top">收件人資訊</div>
+                        <div class="form-body">
+                            <form action="">
+                                <label>收件人</label><br>
+                                <input type="text" class="answer"><br>
+                                <label>電話號碼</label><br>
+                                <input type="text" class="answer"><br>
+                                <label>電子郵件</label><br>
+                                <input type="text" class="answer"><br>
+                            </form>
+                        </div>
+                        <div class="form-header">送貨資料</div>
+                        <div class="form-body">
+                            <form action="">
+                                <label>選擇日期</label><br>
+                                <input type="date" class="answer"><br>
+                                <label>選擇時段</label><br>
+                                <select name="" id="" class="answer">
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                </select><br>
+                                <label>宅配地址</label><br>
+                                <input type="text" class="answer"><br>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <div class="button">完成訂單</div>
+        
+
+    </main>
+
+</body>
+<footer>
+    <div class="f-down"><br>
+        <h3>
+            瀏覽人數：100人
+        </h3><br>
+        <h4>
+            Copyright © PiEPAi 版權所有
+        </h4>
+    </div>
+</footer>
+</html>
