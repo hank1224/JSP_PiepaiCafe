@@ -1,0 +1,74 @@
+*{
+ margin: 0px;
+}
+.as-section1{
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 950px;
+    font-size: 25px;
+    text-shadow: rgb(163 163 163) 5px 5px 5px
+}
+.as-section2{
+    background-color: rgb(240,240,240);
+    height: 780px;
+    width: 1600px;
+    margin-left: 140px;
+    display: flex;
+    padding-top: 35px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+.as-s2-person{
+    width: 375px;
+    background-color:bisque;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-right: 20px;
+    padding-right: 30px;
+    height: 710px;
+}
+.as-s2-person:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+}
+.as-s2-p-img{
+    width: 320px;
+    height: 380px;
+
+}
+.as-s2-p-img>img{
+    width: 320px;
+    height: 350px;
+}
+.as-s2-p-text{
+    width: 320px;
+    height: 200px;
+    text-align: center;
+}
+.as-s2-p-t-name{
+    width: 320px;
+    height: 90px;
+
+}
+.as-s2-p-t-name>h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.as-s2-p-t-name>h4{
+    font-size: 18px;
+}
+.as-s2-p-t-text{
+    width: 320px;
+    height: 150px;
+    font-size: 18px;    
+}
+.as-s2-p-t-ig{
+    width: 320px;
+    height: 50px;
+    
+}
+.as-s2-p-t-ig>a>img{
+    margin-left: 250px;
+    width: 50px;
+    height: 50px;
+}

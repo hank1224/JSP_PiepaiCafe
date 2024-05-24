@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+}
+.m-section2{
+    background-image: url(../img/background.jpg);
+    width: 1903px;
+    height: 810px;
+    padding-top: 50px;
+    padding-left: 280px;
+    margin-top: 100px;
+}
+#tab {
+    background: bisque;
+
+    width: 1072px;
+    height: 700px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: 130px;
+}
+/* 頁籤ul */
+
+/* 頁籤上的文字 */
+#tab > ul > li > a { 
+    text-decoration: none;
+    font-size: 25px;
+    color: #333;
+    float: left;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;;
+    margin-left: 70px;
+
+    width: 150px;    
+}
+/*頁籤div內容*/
+#tab > div {
+    clear: both;
+    padding: 0 15px;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+/*第一筆的底色*/
+span:target ~ #tab > ul li:first-child a {
+    background: bisque;
+}
+
+span:target ~ #tab > div:first-of-type {
+    visibility: hidden;
+    height: 0;
+    padding: 0 15px;
+}
+
+/*頁籤變換&第一筆*/
+span ~ #tab > ul li:first-child a,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"],
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"] {
+    background: white;
+    border-radius: 50px;    
+}
+
+span ~ #tab > ul li:first-child a::before,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"]::before,
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"]::before,
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"]::before,
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"]::before{
+    background-color: white;
+    height: 500px;
+
+}
+
+/*頁籤內容顯示&第一筆*/
+span ~ #tab > div:first-of-type,
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3,
+#tab-4:target ~ #tab > div.tab-content-4{
+    visibility: visible;
+    height: 450px;
+    width: 1069px;
+    background: white;
+}
+
+.tab-content-1{
+    width: 600px;
+    height: 900px;
+}
+.m-s2-f-form{
+    display: flex;
+    margin-top: 100px;
+    /*margin-left: 140px;*/
+}
+.m-s2-f-f-person{
+    width: 300px;
+    height: 300px;
+}
+.m-s2-f-f-person>h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.m-s2-f-f-p-text{
+    width: 400px;
+    height: 200px;
+    padding-left: 20px;
+    font-size: 15px;
+    
+}
+.m-s2-f-f-person2{
+    width: 300px;
+    margin-left: 130px;
+    
+}
+.m-s2-f-f-person2>h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.m-s2-f-f-p-text>h4{
+    font-size: 20px;
+        
+}
+.m-s2-f-f-p-text>h4>input{
+    border:1px; 
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-left-style:none;
+    border-right-style:none;
+    font-size: 20px;
+    background-color: white;
+    height: 30px;
+    width: 300px;
+}
+.m-s2-f-f-p-text2>a>button{
+    margin-left: 260px;
+    height: 35px;
+    width: 120px;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+    margin-top: 60px;
+}
+.m-s2-f-f-p-text3>a>button{
+    margin-left: 260px;
+    margin-top: 10px;
+    height: 35px;
+    width: 120px;
+    color: white;
+    background-color: #333; 
+    cursor: pointer;
+}
+.tab-content-2>form{
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.tab-content-2>form>tr,th,td{
+    width: 180px;
+    height: 50px;
+    text-align: center;
+}
+
+.s3-text{
+    height: 300px;
+    width: 900px;
+    margin-top: 50px;
+    margin-left: 100px; 
+}
+
+.s3-t-people{
+    width: 900px;
+}
+.s3-t-p-box{
+    width: 500px;
+    position: relative;
+}
+.s3-t-p-box{
+    width: 500px;
+}
+.s3-t-p-box>img{
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 10px;
+    position: absolute;
+    ;
+}
+.s3-t-p-box>h5{
+    position: relative;
+    font-size: 25px;
+    padding-top: 5px;
+    margin-left: 80px;
+}
+.s3-t-p-star{
+    position:relative;
+    font-size: 30px;
+    margin-left: 300px;
+    margin-top: -40px;
+    color: #ffdf50;
+}
+.s3-t-p-comment{
+    font-size: 20px;
+    margin-left: 80px;
+}
+.s3-t-p-time{
+    margin-left: 800px;
+    position:relative;
+}
+.tab-content-4>table{
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.tab-content-4>table>tr,th,td{
+    width: 250px;
+
+}
+.like{
+    color: red;
+    border-radius: 25px;
+    font-size: 40px;
+}
+#like-del,#like-del2,#like-del3{
+    height: 40px;
+    width: 100px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}

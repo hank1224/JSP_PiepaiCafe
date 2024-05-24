@@ -1,0 +1,219 @@
+ /*初始化*/
+ *{
+    margin: 0;
+    padding:0;
+    list-style: none;  
+}
+main{
+    background-image: url('../img/rainbow.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:100px;
+}
+
+/*訂單確認*/
+.section1{
+    margin-top:150px;/*導覽列預留高度*/
+    padding:0;
+    box-sizing: border-box;
+    font-size: 'GenRyuMin-M';
+}
+.section1>div{
+    display: block;
+}
+.order{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    width:1000px;
+    padding:50px 100px;
+    margin-bottom: 40px;
+    background-color: rgba(240,229,217,.8);
+    border-radius: 10px;
+   
+}
+.check-order{
+    display: flex;
+    padding:20px;
+    
+}
+.or-img>input{
+    position: relative;
+    top:-50px;    
+}
+.check-order>img{
+    width: 25px;
+    height: 25px;
+    margin:10px;
+}
+.order>table{
+    width:100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+}
+.or-title{
+    height: 40px;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-top: 1px solid black;
+}
+th{
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+.or-img{
+    width:250px;
+}
+.or-img>img{
+    width:100px;
+    padding:20px;
+    border-radius: 30px;
+}
+.or-txt{
+    text-align: left;
+}
+.cp2{
+    border: 1px solid black;
+    padding:0 10px;
+    width: 100px;
+    margin:0 auto;
+}
+.cp2 button{
+    font-size: 16px;
+    background: none;
+    border: none;
+    width: 25px;
+    height: 35px;
+    text-align: center;
+}
+
+.cp4 >button{
+    background: none;
+    border:none;
+    color:black;
+    font-size:15px;
+}
+.cp4 button:hover{
+    color:red;
+}
+.or-end{
+    border-bottom:1px solid black;
+}
+
+.check-txt-top{
+    padding:30px 10px 10px 10px;
+}
+.check-txt{
+    padding:10px;
+}
+.statement>p{
+    text-align: center;
+    margin:10px;
+    padding:10px;
+}
+.barlines{
+    height:25px;
+    display: block;
+    padding:20px;
+    width:200px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(90deg,black 1px,transparent 0);
+    background-size: 2px 100%;
+    position: relative;
+    left: 38%;
+}
+
+/*填寫資料*/
+.section2{
+    width:1000px;
+    padding:50px 100px;
+    margin-bottom: 40px;
+    margin:auto;
+    background-color: rgba(240,229,217,.8);
+    border-radius: 10px;
+}
+
+.write-data{
+    display: flex;
+    padding: 20px;
+    
+}
+.write-data>img{
+    width:23px;
+    height: 23px;
+    margin:10px;
+}
+.group-left{
+   float:left;
+   width:48%;
+   border-right: 1px dashed black;
+}
+.group-right{
+   float: right;
+   width:49%;
+}
+section::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.form-header-top{
+    width:410px;
+    height: 26px;
+    padding:10px 15px;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.form-header{
+    width:410px;
+    height: 26px;
+    padding:10px 15px;
+    font-weight: 900;
+}
+.form-body{
+    padding:20px;
+}
+.customer-information{
+    line-height: 40px;
+    color:#555;
+}
+label{
+    color:#555;
+    font-size: 14px;
+    line-height: 3;
+}
+.answer{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    width:300px;
+    height: 38px;
+}
+.memo{
+    width:300px;
+    height: 115px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+
+/*完成訂單*/
+.button{
+    
+    margin:50px auto;
+    width:150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(240,229,217);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+   
+}

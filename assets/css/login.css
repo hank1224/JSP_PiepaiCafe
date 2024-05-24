@@ -1,0 +1,275 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+
+  }
+ 
+  .title{
+    display: flex;
+    position: relative;
+    padding: 5px 300px;
+    
+  }
+
+  li,a{
+    font-family:"Montserrat",sans-serif;
+    font-weight:350;
+    font-size:17px;
+    color: #24252a;
+    text-decoration:none;
+  }
+  header nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+ 
+  }
+  .nav_links{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    
+  }
+  .nav_links li{
+    display:inline-block;
+    padding:0px 
+    
+    
+  }
+  .allitems{
+    width:190px;
+    height:65px;
+    line-height:100px;
+    text-align:center;
+    transition: .3s;
+    padding: 50PX;
+    /*cursor: pointer;*/
+  
+    
+  }
+  .allitems2{
+    width:60px;
+    /*height: 65px;*/
+    line-height :65px;
+    text-align:center;
+    /*transition: .3s;
+    cursor: pointer;*/
+  
+    
+  }
+  .allitems2 img{
+      width: 30px;
+      height: 30px;
+      padding-right: 5px;
+      background-image: url("");
+  }
+  
+  .allitems li{
+    display:block;
+    height: 0;
+    transition: .2s;
+    opacity: 0;
+    transform: translateY(-65px);
+  }
+  
+   .allitems:hover li{
+    height: 65px;
+    opacity: 1;
+    transform: translateY(0);
+    
+  }
+  .nav_links li a{
+    transition:all 0.3s ease 0s;
+  }
+  .nav_links li a:hover{
+    color:#0088a9;
+  }
+  
+
+
+/*固定最上方*/
+#topbar{
+  background-color: #f1e7e2;
+  position: fixed;
+  z-index:10;
+  width: 100%;
+  height: 80px;
+  transition: top 0.2s;
+  box-shadow:gray 5px 5px 15px;
+}
+.topbarclass{
+  margin: auto;
+}
+.topbarimportant{
+  display: flex;
+  margin: auto;
+  width: 1500px;
+  height: 65px;
+  margin-left: 200px;
+}
+.indexpage a img{
+display: block;
+height: 65px;
+margin-top: 10px;
+padding-left: -20px;
+
+}
+.indexitems{
+  display: block;
+  width: 85%;
+  text-align: center;
+  float: right;
+  margin-left: -100px;
+  padding-left: 0px;
+}
+
+/*login*/
+.logins{
+  display: block;
+  padding-top: 10px;
+  margin-left: -250px;
+}
+/* Full-width input fields */
+.container>input[type=text], .container>input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ 
+}
+
+/* Set a style for all buttons */
+.btn01 {
+  background-color:black;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 160px;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+
+}
+
+.btn01:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+ 
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width:470px; 
+  height: 700px;
+  border-radius: 15px;
+  background-image: url(../img/background.jpg);
+  background-blend-mode: multiply;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(238, 87, 49);
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/*register*/
+.register{
+  display: block;
+  padding-top: 10px;
+  margin-left: -130px;
+}
+.car{
+  margin-left:-110px ;
+  margin-top: 16px;
+}
+.modal-content1 {
+ 
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width:470px; 
+  height: 800px;
+  border-radius: 15px;
+  background-image: url(../img/background.jpg);
+  background-blend-mode: multiply;
+}
+

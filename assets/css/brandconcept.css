@@ -1,0 +1,117 @@
+/*初始化*/
+*{
+    margin:0;
+    padding:0;
+}
+p{
+   
+    line-height: 30px;
+}
+/*section1*/
+.section1{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    background-color: bisque;
+}
+.s1-lcontainer{
+    padding-right: 100px;
+    padding-top:100px;
+}
+.s1-rcontainer{
+    max-width: 900px;
+    max-height: 400px;
+    padding:50px;
+
+}
+
+/*section2*/
+.section2{
+    padding:40px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.s2-lcontainer-img{
+    max-width: 700px;
+    /*max-height: 500px;*/
+}
+.s2-lcontainer-txt{
+    padding-top:100px;
+   
+    padding-left: 250px; 
+}
+.s2-lcontainer-txt p>img{
+    width:40px;
+    height:40px;
+}
+
+.s1-rcontainer>img,.s2-lcontainer-img>img{
+    width:100%;
+    
+}
+.section2>div{
+    margin:30px;
+}
+.s2-rcontainer>div{
+    padding:30px;
+}
+.s2-rcontainer-img{
+    max-width: 490px;
+    /*max-height: 280px;*/
+}
+.s2-rcontainer-img>img{
+    width: 100%;
+    position: relative;
+    top:10px;
+}
+
+/*section3*/
+.section3{
+    background-color: bisque;
+    display: flex;
+    padding:40px;
+    justify-content: center;
+    
+}
+.s3-rcontainer{
+    max-width: 420px;
+    max-height: 240px;
+
+}
+.s3-rcontainer>img{
+    width: 100%;
+}
+
+.section3>div{
+    margin: 100px;
+}
+
+
+/*section4*/
+.section4{
+    display: flex;
+    justify-content: center;
+}
+.s4-lcontainer>div,.s4-rcontainer>div{
+    padding:50px;
+}
+.s4-lcontainer-img{
+    max-width: 510px;
+    max-height: 800px;
+}
+.s4-lcontainer-img>img{
+    width:100%;
+}
+.s4-rcontianer-img{
+    max-width: 350px;
+    /*max-height: 200px;*/
+}
+.s4-rcontianer-img>img{
+    width:100%;
+}
+.s4-lcontainer{
+    padding-right: 20px;
+}

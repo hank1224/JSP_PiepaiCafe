@@ -1,0 +1,126 @@
+/*初始化*/
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;  
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #ca774b;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width:100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+.navbar{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-left: 290px;
+    border-bottom: 1px solid rgb(218,218,218);
+    height: 150px;
+}
+.navbar-option{
+    padding:30px;
+}
+.aboutus{
+    padding-left: 35px;
+}
+.navbar-option,.protrait{   
+    text-align: center;
+    line-height: 65px;
+    transition: .3s;
+    cursor: pointer;
+   
+}
+.protrait::before{
+    content: '';
+    display: block;
+    width:150px;
+    height:150px;
+    /*border-radius: 50%;*/
+    transform: translate(30px,-30px);
+    background-image: url('../img/logo.svg');
+    background-size: cover;
+    margin-top: 20px;  
+}
+.navbar-option ul li{
+    height: 0;
+    transition: .2s;
+    opacity: 0;
+    transform: translateY(-65px);
+    width: 120px;
+    
+}
+
+.navbar-option:hover li{
+    height:65px;
+    opacity: 1;
+    transform: translateY(0);
+    background-color: white;
+    
+}
+.right-navbar-option{
+    cursor: pointer;
+    padding:0 15px;
+}
+/*搜尋文字欄容器*/
+.input-container{
+    position: relative;
+    top:-10px;
+}
+/*搜尋文字欄*/
+.right-navbar-option span>input{
+    background: none;
+    border: 1px solid rgb(240,240,240);
+    border-radius: 15px;
+    width:100px;
+    height: 25px;
+    background-color: rgb(240,240,240);
+    font-size: 15px;
+    padding:0 5px;
+    opacity: 0;
+    transform: translateX(65px);
+    transition: .2s;
+}
+/*搜尋圖標*/
+.right-navbar-option span>img{
+    width:30px;
+    height:30px;
+    margin-top: 45px; 
+}
+.right-navbar-option:hover input{
+    opacity: 1;
+    transform: translateX(0);
+}
+/*購物車圖標*/
+.right-navbar-option a>img{
+    width:30px;
+    height:30px;
+    margin-top: 45px;
+    cursor: pointer;
+}
+/*Contact*/
+.right-navbar-option a>button{
+    padding: 9px 25px;
+    background-color: rgb(240,229,217);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 50px;
+    
+
+}
