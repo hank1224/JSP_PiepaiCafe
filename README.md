@@ -1,6 +1,8 @@
 # 多媒體網程期末 jsp後端
 
-Static Preview: [hank1224.github.io/JSP_PiepaiCafe/](hank1224.github.io/JSP_PiepaiCafe/)
+Static Preview: [https://hank1224.github.io/JSP_PiepaiCafe/](https://hank1224.github.io/JSP_PiepaiCafe/)
+
+GitHub Pages use static html at `gh-pages` branch.
 
 ## Contributors
 
